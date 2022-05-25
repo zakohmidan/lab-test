@@ -1,4 +1,6 @@
 FROM php:7.4-apache
+RUN apt install vsftpd -y
+# COPY 
 COPY src/ /var/www/html/
 WORKDIR /var/www
 EXPOSE 8001
