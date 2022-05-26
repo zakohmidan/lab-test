@@ -3,7 +3,7 @@ RUN apt update
 RUN apt install vsftpd curl -y
 
 #COPY /etc/vsftpd.conf /etc/vsftpd.conf.backup
-#COPY cnf/vsftpd.conf /etc/vsftpd.conf
+COPY cnf/vsftpd.conf /etc/vsftpd.conf
 
 COPY src/ /var/www/html/
 WORKDIR /var/www
