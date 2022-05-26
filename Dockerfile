@@ -1,14 +1,17 @@
 FROM php:7.4-apache
 
-RUN apt-get update \
-    && apt-get install -y vsftpd curl \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 ENV HOME=/root \
     TERM=xterm \
     DEBIAN_FRONTEND=noninteractive \
     STARTUPDIR=/dockerstartup 
+
+
+    
+RUN apt-get update \
+    && apt-get install -y vsftpd curl #\
+    # && apt-get clean \
+    # && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 
 # RUN apt update
 # RUN apt install vsftpd curl -y
