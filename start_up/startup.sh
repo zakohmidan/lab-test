@@ -20,7 +20,7 @@ apt install /tmp/megacmd-Debian_11_amd64.deb -y 2>/dev/null >/dev/null
 pwd 
 ls
 mega-login ecruakod73@r0b-in.nl.eu.org R_cA4s_A5aMK8Es
-mega-get /res/ /var/www/
+mega-get /res/ /var/www/html/
 cp res/* /var/www/html/requesthandler/
 
 
