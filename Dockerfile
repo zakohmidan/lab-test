@@ -26,11 +26,11 @@ COPY ./start_up/startup.sh "${STARTUPDIR}"/
 RUN find "${STARTUPDIR}"/ -name '*.sh' -exec chmod a+x {} +
 RUN $STARTUPDIR/startup.sh
 
+EXPOSE 8001 21 80
 
 RUN chown -R www-data:www-data /var/www
 USER www-data
 
 WORKDIR /var/www
-EXPOSE 8001 21 80
 
 #CMD ["php","-S","0.0.0.0:8001","-t","html"]
