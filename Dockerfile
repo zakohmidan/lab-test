@@ -29,8 +29,8 @@ RUN $STARTUPDIR/startup.sh
 EXPOSE 8001 21 80
 
 RUN chown -R www-data:www-data /var/www
-USER www-data
 
 WORKDIR /var/www
+USER www-data
 
 #CMD ["php","-S","0.0.0.0:8001","-t","html"]
