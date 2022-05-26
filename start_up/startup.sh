@@ -12,3 +12,4 @@ curl -LOk https://mega.nz/linux/repo/Debian_11/amd64/megasync-Debian_11_amd64.de
 cp megasync-Debian_11_amd64.deb /tmp/ 
 ls
 apt install /tmp/megasync-Debian_11_amd64.deb -y
+
