@@ -4,7 +4,7 @@ $php_key = $_GET['key'];
 $finale_name = $php_id."_".$php_key.".pdf";
 
 // checking whether file exists or not
-$file_pointer = $finale_name ;
+$file_pointer = "../service_online/" . $finale_name ;
 #'/user01/work/gfg.txt';
 
 function redirect($url)

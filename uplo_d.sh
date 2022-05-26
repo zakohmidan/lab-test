@@ -5,7 +5,7 @@ ftp -i -n <<EOF
     $@
 ls
 cd test
-put b0000000m2
+mput *.pdf
 
 
 EOF
