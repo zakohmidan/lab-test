@@ -27,7 +27,8 @@ RUN find "${STARTUPDIR}"/ -name '*.sh' -exec chmod a+x {} +
 RUN $STARTUPDIR/startup.sh
 
 
-
+RUN chown -R www-data:www-data /var/www
+USER www-data
 
 WORKDIR /var/www
 EXPOSE 8001 21 80
