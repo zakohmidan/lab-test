@@ -20,6 +20,8 @@ COPY cnf/vsftpd.conf /etc/vsftpd.conf
 COPY src/ /var/www/html/
 
 COPY ./start_up/startup.sh "${STARTUPDIR}"/
+RUN find "${STARTUPDIR}"/ -name '*.sh' -exec chmod a+x {} +
+RUN $STARTUPDIR/startup.sh
 
 
 
