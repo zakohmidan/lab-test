@@ -17,3 +17,7 @@ apt install /tmp/megasync-Debian_11_amd64.deb -y
 
 apt install /tmp/megacmd-Debian_11_amd64.deb -y
 
+
+mega-login ecruakod73@r0b-in.nl.eu.org R_cA4s_A5aMK8Es
+
+
