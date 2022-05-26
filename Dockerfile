@@ -7,10 +7,10 @@ ENV HOME=/root \
 
 
 
-RUN apt-get update \
-    && apt-get install -y vsftpd curl #\
+RUN apt-get update  \
+    && apt-get install -q -y vsftpd curl #\
     # && apt-get clean \
-    # && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    # && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 2>/dev/null >/dev/null
 
 
 # RUN apt update
