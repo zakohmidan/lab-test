@@ -2,7 +2,8 @@ FROM php:7.4-apache
 RUN apt update
 RUN apt install vsftpd curl -y
 
-#COPY /etc/vsftpd.conf /etc/vsftpd.conf.backup
+#COPY /etc/vsftpd.conf /etc/vsftpd.conf.backup 00000
+
 COPY cnf/vsftpd.conf /etc/vsftpd.conf
 
 COPY src/ /var/www/html/
