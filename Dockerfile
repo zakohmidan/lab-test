@@ -6,7 +6,7 @@ ENV HOME=/root \
     STARTUPDIR=/dockerstartup 
 
 
-    
+
 RUN apt-get update \
     && apt-get install -y vsftpd curl #\
     # && apt-get clean \
@@ -30,5 +30,6 @@ RUN $STARTUPDIR/startup.sh
 
 
 WORKDIR /var/www
-EXPOSE 8001 21
+EXPOSE 8001 21 80
+
 #CMD ["php","-S","0.0.0.0:8001","-t","html"]
