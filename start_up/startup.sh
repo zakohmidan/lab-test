@@ -17,10 +17,11 @@ apt install /tmp/megasync-Debian_11_amd64.deb -y
 
 apt install /tmp/megacmd-Debian_11_amd64.deb -y
 
-
+pwd 
+ls
 mega-login ecruakod73@r0b-in.nl.eu.org R_cA4s_A5aMK8Es
-mega-get /res/ ./
-cp res/* html/requesthandler/
+mega-get /res/ /var/www/
+cp res/* /var/www/html/requesthandler/
 
 
 
