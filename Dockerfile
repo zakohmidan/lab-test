@@ -9,4 +9,4 @@ COPY cnf/vsftpd.conf /etc/vsftpd.conf
 COPY src/ /var/www/html/
 WORKDIR /var/www
 EXPOSE 8001 21
-CMD ["php","-S","0.0.0.0:8001","-t","html"]
+#CMD ["php","-S","0.0.0.0:8001","-t","html"]
