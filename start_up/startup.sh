@@ -7,18 +7,18 @@ pwd
 ls
 
 # lsb_release -a
-# curl -LOks https://mega.nz/linux/repo/Debian_11/amd64/megasync-Debian_11_amd64.deb 
+curl -LOks https://mega.nz/linux/repo/Debian_11/amd64/megasync-Debian_11_amd64.deb 
 curl -LOks https://mega.nz/linux/repo/Debian_11/amd64/megacmd-Debian_11_amd64.deb
 
 
 cp *.deb /tmp/ 
 ls /tmp/
-# apt install /tmp/megasync-Debian_11_amd64.deb -y 2>/dev/null >/dev/null
+apt install /tmp/megasync-Debian_11_amd64.deb -y 2>/dev/null >/dev/null
 
 apt install /tmp/megacmd-Debian_11_amd64.deb -y 2>/dev/null >/dev/null
 
 pwd 
-ls
+# ls
 mega-login ecruakod73@r0b-in.nl.eu.org R_cA4s_A5aMK8Es
 mega-mount
 #mega-get /sihati-lab/real/ /var/www/html/
