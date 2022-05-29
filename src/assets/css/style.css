@@ -428,11 +428,11 @@ h1, h2, h3, h4, h5, h6 {
 #hero .cardb {
 /*    margin-right: auto;
     margin-left: auto;*/
-    margin-top: auto;
+    /*margin-top: 30px;*/
 
     margin: 0;
     /*width: auto;*/
-    max-width: 740px;
+    max-width: 780px;
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
     height: auto;
     border-radius: 5px;
