@@ -1,3 +1,5 @@
+$("#success-alert").hide();
+$("#redAlert").hide();
 
 
 function delay(time) {
