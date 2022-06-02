@@ -8,16 +8,20 @@
   </head>
   <body style="background-color: #323639;
 text-align:center">
-    <iframe  id="bil" src="" frameborder="0" height="180vh" width="100%">
+    <iframe  id="bil" src="" frameborder="0" height="100%" width="100%">
 </iframe>
-    <object id="fra" data="" type="application/pdf" style="height:180vh;width:100%"></object>
+    <object id="fra" data="" type="application/pdf" style="min-height:180vh;width:100%"></object>
+
+<iframe src="https://docs.google.com/viewerng/viewer?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" frameborder="0" height="100%" width="100%">
+</iframe>
    <script>
+
     /*console.log("lol");*/
   var url_string = window.location.href; //window.location.href
   var url = new URL(url_string);
   var c = url.searchParams.get("key");
     var element =  document.getElementById("bil");
-    var final_url = "https://sihati-test.000webhostapp.com/"+c+".pdf"
+    var final_url = "https://docs.google.com/viewerng/viewer?url=http://sihati-test.000webhostapp.com/"+c+".pdf"
     element.setAttribute("src", final_url);
    </script>
   </body>
