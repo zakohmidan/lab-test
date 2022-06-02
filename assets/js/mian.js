@@ -10,11 +10,11 @@ function allm(tt ,key_fram) {
     if (tt == 200)
     {
        /*window.open(full_url));*/
-       origin_res="fu.html?key=";
+       origin_res="results.html?key=";
        var final_iframe =origin_res +key_fram;
 
       showAlert();
-      delay(500).then(() => window.open(final_iframe));
+      delay(1250).then(() => window.open(final_iframe));
       /*sleep(1000);
       */
 
