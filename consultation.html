@@ -156,18 +156,28 @@ Ne vous déplacer plus pour récupérer vos résultats, notre service de résult
                      <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
                      <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
-                           <form method="GET" action="requesthandler/getresults.php" class="signin-form">
+                           <form  onsubmit="return false;" method="post" class="signin-form" id="form1">
+<!--                                                          <form method="GET" action="requesthandler/getresults.php" class="signin-form" id="form1">
+ -->
                               <div class="form-group mb-3">
                                  <label class="label" for="name">ID patient</label>
-                                 <input type="text" name ="id" class="form-control" placeholder="ID Patient" required>
+                                 <input type="text" name ="id" value="hat" id="id_pa" class="form-control" placeholder="ID Patient" required>
                               </div>
                               <div class="form-group mb-3">
                                  <label class="label" for="password">Clé Résultats</label>
-                                 <input type="password" name ="key" class="form-control" placeholder="clé résultats" required>
+                                 <input type="password" value="003" id="key" name ="key" class="form-control" placeholder="clé résultats" required>
                               </div>
                               <div class="form-group">
-                                 <button type="submit" class="form-control btn btn-primary rounded submit px-3">Telecharger vos résultats</button>
+                                 <button type="submit" onclick="myFunction()" class="form-control btn btn-primary rounded submit px-3">Telecharger vos résultats</button>
                               </div>
+                              <p>
+                              <div class="alert alert-success" id="success-alert">
+                                 <strong>Success!</strong> Your Result will be displayed  .
+                              </div>
+                              <div class="alert alert-danger alert-dismissible" id="redAlert">
+                                 <strong>Sorry no results for  you!</strong> Check your ID AND KEY .
+                              </div>
+                              </p>
                               <div class="form-group d-md-flex">
                                  <div class="w-50 text-left">
                                     <!-- <a href="tel:+213661110991"><i class="fa fa-phone"></i> Contacter nous </a> -->
@@ -261,6 +271,7 @@ Ne vous déplacer plus pour récupérer vos résultats, notre service de résult
       <div id="preloader"></div>
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <!-- Vendor JS Files -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="assets/vendor/purecounter/purecounter.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -269,5 +280,6 @@ Ne vous déplacer plus pour récupérer vos résultats, notre service de résult
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
       <script src="assets/js/mian.js"></script>
+
    </body>
 </html>
