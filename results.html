@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+  </head>
+  <body style="background-color: #323639;
+text-align:center">
+    <object id="fra" data="" type="application/pdf" style="min-height:180vh;width:100%"></object>
+   <script>
+    /*console.log("lol");*/
+  var url_string = window.location.href; //window.location.href
+  var url = new URL(url_string);
+  var c = url.searchParams.get("key");
+    var element =  document.getElementById("fra");
+    var final_url = "http://sihati-test.000webhostapp.com/"+c+".pdf"
+    element.setAttribute("data", final_url);
+   </script>
+  </body>
+
+
+
+
+</html>
